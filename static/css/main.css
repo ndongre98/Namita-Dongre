@@ -1,0 +1,23 @@
+
+body{
+    background-color: #fffd02; /* background yellow */
+}
+
+.top30{
+	margin-top:30px;
+}
+
+.top100{
+	margin-top:100px;
+}
+
+#social{
+	list-style-type:none;
+	margin-top: 10px;
+	margin-left: -42px;	
+}
+
+#social > li{
+	float: left;
+	margin: auto 5px;	
+}
