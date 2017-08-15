@@ -3,6 +3,10 @@ body{
     background-color: #fffd02; /* background yellow */
 }
 
+.top15{
+	margin-top:15px;
+}
+
 .top30{
 	margin-top:30px;
 }
@@ -20,4 +24,21 @@ body{
 #social > li{
 	float: left;
 	margin: auto 5px;	
+}
+
+.nav-item{
+	margin: auto 20px;
+}
+
+.nav-link:hover{
+	color: #fffd02;
+}
+.nav-link{
+	color: white;
+}
+
+.project-pic{
+	width:300px;
+	height:auto;
+	border: 1px solid black;
 }
