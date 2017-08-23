@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>    
 		<meta charset="utf-8">
@@ -17,30 +16,33 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-toggleable-md navbar-fixed-top" style="height:75px; background-color:black; color:white">
-			<div class="container">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    					<span class="navbar-toggler-icon"></span>
- 				</button>
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav" style="margin-left:-42px">
-						<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-						<li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">RESUME</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://www.namitadongre.wordpress.com">BLOG</a></li>
-					</ul>
-				</div>	
+		<nav class="navbar navbar-toggleable-md navbar-inverse" style="">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="https://drive.google.com/file/d/0B17dTTvdjiGQeE1Wd3B3clVmVzg/view?usp=sharing">RESUME</a></li>
+					<!--li class="nav-item"><a class="nav-link" href="https://www.namitadongre.wordpress.com">BLOG</a></li-->
+					<li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>	
+				</ul>
 			</div>
-		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="row top100">
+		</nav>	
+		<div class="container" id="body">
+			<div class="row flex-sm-row-reverse">
+				<div class="col center-content">
+					<img class="top30" width=70% src="static/images/derp.png"/>
+				</div>
+				<div class="col-sm-6 mobile-margin">
+					<div class="row top60">
 						<h1>Hello, my name is Namita Dongre and this is my website.</h1>
 					</div>
 					<div class="row top30">
-						<h1>Simply put, I really like coding.</h1>
+						<h2>I am a developer with a passion for grilled-chicken sandwiches.</h2>
 					</div>
 					<div class="row top30">
 						<h4>Connect with me at: </h4>
@@ -54,14 +56,17 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col" style="text-align:center">
-					<img class="top30" width=65% src="static/images/derp.png"/>
-				</div>
 			</div>
 		</div>
-		<footer class="footer" style="background-color:black; bottom:0; height:75px">
-			
+		<footer>
+			<div class="row top15">
+				<div class="col"></div>
+				<div class="col-sm-4" style="text-align: right; margin-right: 15px">&copy; 2017 Namita Dongre<br>Carnegie Mellon University</div>
+			</div>
 		</footer>
+
+		<a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left" style="background-color: #fffd02; color:black;"><span class="fa fa-chevron-up"></span></a>
+		
 		<script src="static/js/tether.min.js"></script>
 		<script src="static/js/jquery-3.2.1.min.js"></script>
 		<script src="static/js/bootstrap.min.js"></script>

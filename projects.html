@@ -6,106 +6,121 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Namita Dongre | Lol hi</title>
+		<title>PROJECTS | Namita Dongre</title>
 		
 		<!--STYLE-->
 		<link type="text/css" rel="stylesheet" href="static/css/bootstrap.min.css"/>
 		<link type="text/css" rel="stylesheet" href="static/css/main.css"/>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 		
 		<!--FAVICON-->
 		<link rel="shortcut icon" href="static/images/logo.png" type="image/x-icon"/>
 
 	</head>
 	<body style="background-color:white">
-		<nav class="navbar navbar-default navbar-toggleable-md navbar-fixed-top" style="height:75px; background-color:black; color:white">
-			<div class="container">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    					<span class="navbar-toggler-icon"></span>
- 				</button>
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav" style="margin-left:-42px">
-						<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-						<li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">RESUME</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://www.namitadongre.wordpress.com">BLOG</a></li>
-					</ul>
-				</div>	
+		<nav class="navbar navbar-toggleable-md navbar-inverse" style="">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link active" href="projects.html">PROJECTS</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="https://drive.google.com/file/d/0B17dTTvdjiGQeE1Wd3B3clVmVzg/view?usp=sharing">RESUME</a></li>
+					<!--li class="nav-item"><a class="nav-link" href="https://www.namitadongre.wordpress.com">BLOG</a></li-->
+					<li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>					
+				</ul>
 			</div>
-		</nav>
-		<div class="container">
+		</nav>	
+		<div class="container" id="body">
 			<div class="row top30" style="height:150px; background-color:black">
 				<div class="col top15" style="text-align:center">
 					<img width="120px" style="border-radius:100px" src="static/images/logo.png" alt="pic"/>	
 				</div>
 			</div>
 			<div class="row top30">
-				<div class="col" style="text-align:center">
-					<h1>Projects</h1>
+				<div class="col text-center">
+					<h1>Stuff I've Been Working On</h1>
+				</div>
+			</div>
+			<div class="row top60">
+				<div class="col-md-4 col-sm-4 col-lg-4 center-content">
+					<img class="project-pic" src="static/images/moola.png"/>
+				</div>
+				<div class="col">
+					<h5 class="center-content" style="color:rgb(127,127,127);margin-bottom:10px">MOOLA: Personal Stock Portfolio & Financial Sentiment Analysis</h5>
+					<h6 class="center-content"><em><strong>Flask, Python, MongoDB, IBM Watson, Heroku</strong></em></h6><br>
+					<h6><strong>Objective: </strong></h6><p>Moola is a financial portfolio web application that determines the "likeability" of a stock in the eyes of financial experts.</p>
+					<h6><strong>Motivation: </strong></h6><p>Moola was built to quantify a very important aspect of the market that is not typically taken into account: the likeability and trust of a company.</p>
+					<h6><strong>How it Works: </strong></h6><p>Using IBM Watson's sentiment analytics API, Moola scours through Yahoo Finance articles to extract information on how financial experts feel about various companies. It assigns numerical scores to various emotion keywords (i.e. trust, fear, excitement) for each company that the user can refer to. An extension to this project is to have Moola read from other financial sources.</p>						
+					<p>**Moola won BNY Mellon's Best Financial Hack at CMU Tartan Hacks 2017.</p>
 				</div>
 			</div>
 			<div class="row top30">
-				<div class="col-sm-4">
+				<div class="col-md-4 center-content">
+					<img class="project-pic" src="static/images/facialrecognizer.png"/>
+				</div>
+				<div class="col">
+					<h5 class="center-content" style="color:rgb(127,127,127);margin-bottom:10px;">Facial-Recognizer Security System</h5>
+					<h6 class="center-content"><em><strong>Flask, Python, JQuery, Bootstrap</strong></em></h6><br>
+					<h6><strong>Objective: </strong></h6><p>FRS is a security web application that allows users to easily monitor their property.</p>
+					<h6><strong>Motivation: </strong></h6><p>FRS was built to tackle the issue of reducing the likelihood of robbery or the trespassing of private property. In addition, it aims to reduce costs while increasing the effectiveness of building security.</p>
+					<h6><strong>How it Works: </strong></h6><p>Using OpenCV and scikit-learn, FRS takes advantage of machine-learning techniques to "learn" the faces of individuals entering a vicinity. With its clear GUI, the user can easily determine whether or not a particular individual is "trusted" or "untrusted." The dashboard alerts users when unclassified or untrusted persons enter their property.</p>														
+				</div>
+			</div>
+			<div class="row top30">
+				<div class="col-md-4 center-content">
+					<img class="project-pic" src="static/images/snowday.png"/>
+				</div>
+				<div class="col">
+					<h5 class="center-content" style="color:rgb(127,127,127);margin-bottom:10px;">Snow Day Forecaster: A Machine-Learning-Based Snow Prediction System</h5>
+					<h6 class="center-content" ><em><strong>Flask, Python, MongoDB, JQuery, Bootstrap</strong></em></h6><br>
+					<h6><strong>Objective: </strong></h6><p>The Snow Day Forecaster is web application that provides students living in my county a reliable guess on school closings based on the weather conditions.</p>
+					<h6><strong>Motivation: </strong></h6><p>The motivation behind this project was that my county's school board would often wait till 5 AM the next day before deeming whether schools should close or not, inconveniencing students, parents, and teachers alike.</p>
+					<h6><strong>How it Works: </strong></h6><p>This project makes use of the Weather Underground, and Twitter APIs for historical weather forecasts. Using scikit-learn, our ML-model determined what weather conditions prompted school-closings. It uses Flask and MongoDB to take in real-time weather data for our county and then makes an educated prediction.</p>										
+					<p>**This application boasts a 99% accuracy.</p>
+				</div>
+			</div>
+			<div class="row top30">
+				<div class="col-md-4 center-content">
 					<img class="project-pic" src="static/images/taxdat.png"/>
 				</div>
 				<div class="col">
-					<h5 style="color:rgb(127,127,127);margin-bottom:10px">MOOLA: <em>Personal Stock Portfolio & Financial Sentiment Analysis</em></h5>
-					<h6><strong>Flask, Python, MongoDB, IBM Watson, Heroku</strong></h6><br>
-					<p>Moola is a financial portfolio web application that takes advantage of IBM Watson's sentiment analytics API to determine the "likeability" of a stock in the eyes of financial experts. It scours through Yahoo Finance articles in this release, however it can be extended to extract information from other sources as well. Moola is different from other measures of stock reliability because of its sentiment analysis. It quantifies a very important aspect of the market that is not typically taken into account.</p>
-					<p>Moola won BNY Mellon's Best Financial Hack at CMU Tartan Hacks 2017.</p>
+					<h5 class="center-content" style="color:rgb(127,127,127);margin-bottom:10px;">TaxDat Sales Tax Calculator</h5>
+					<h6 class="center-content" ><em><strong>Java, Android Studio</strong></em></h6><br>
+					<h6><strong>Objective: </strong></h6><p>TaxDat is a Android mobile application that allows users to easily determine the sales tax and sale price of items across the United States.</p>
+					<h6><strong>Motivation: </strong></h6><p>I made this in high school with a couple of my friends. At the time, none of us had credit or debit cards, meaning we only used cash when we went out. Taking out the exact amount of money we needed to make payments was a hassle because we never knew what the final sale price of anything was. Thus, we built TaxDat to solve that problem.</p>
+					<h6><strong>How it Works: </strong></h6><p>TaxDat is a lightweight application that uses Location Services or user input to gather location data. It does not require any internet connection. Our sales tax data is from an external source. An extension is to link this app with a database that updates sales tax percentages when any change occurs.</p>					
 				</div>
 			</div>
 			<div class="row top30">
-				<div class="col-sm-4">
-					<img class="project-pic" src="static/images/taxdat.png"/>
+				<div class="col-md-4 center-content">
+					<img class="project-pic" src="static/images/classy.png"/>
 				</div>
 				<div class="col">
-					<h5 style="color:rgb(127,127,127);margin-bottom:10px;">Facial-Recognizer Security System</h5>
-					<h6><strong>Flask, Python, JQuery, Bootstrap</strong></h6><br>
-					<p>The Facial-Recognizer is a security dashboard web application created for both home and business owners. Facial-Recognizer was built to tackle the issue of reducing the likelihood of robbery or the trespassing of private property. In addition, it aims to reduce costs while increasing the effectiveness of building security. Inspired by Nest Cam, the Facial-Recognizer platform differs in terms of its flexibility and user-interface. Using OpenCV and scikit-learn, Facial-Recognizer uses machine learning techniques to "learn" the faces of individuals entering a vicinity. With its clear GUI, the user can easily determine whether or not a particular individual is "trusted" or "untrusted." The dashboard alerts users when unclassified or untrusted persons enter their property.</p>
+					<h5 class="center-content" style="color:rgb(127,127,127);margin-bottom:10px;">The Classy Project</h5>
+					<h6 class="center-content"><em><strong>PHP, Pure HTML/CSS</strong></em></h6><br>
+					<h6><strong>Objective: </strong></h6><p>Classy is an academic social media platform meant for student collaboration with minimal distractions.</p>
+					<h6><strong>Motivation: </strong></h6><p>We've all used Facebook and other social media to collaborate on academic work, but it is not a surprise that these websites are more of a distraction than anything else. Classy offers the same functionality as Facebook, but without the distractive elements (cough cough Candy Crush...). Our website heavily encourages student-to-student collaboration rather than student-to-teacher (i.e. Piazza).</p>
+					<h6><strong>How it Works: </strong></h6><p>Using PHP and Google Groups, Classy is built with a forum, instant messenger (without the stickers, emojis, and GIFs), and admin panel for student moderators to ensure that all discussions follow university honor code.</p>						
 				</div>
-			</div>
-			<div class="row top30">
-				<div class="col-sm-4">
-					<img class="project-pic" src="static/images/taxdat.png"/>
-				</div>
-				<div class="col">
-					<h5 style="color:rgb(127,127,127);margin-bottom:10px;">Snow Day Forecaster: <em>A Machine-Learning-Based Snow Prediction System</em></h5>
-					<h6><strong>Flask, Python, MongoDB, JQuery, Bootstrap</strong></h6><br>
-					<p>The Snow Day Forecaster was created with the intent of providing students from my county a reliable guess of whether schools would close based on the weather conditions. The motivation behind this project was that my county would often wait till 5 AM the next day before deeming whether schools should close or not. This was incredibly inconvenient for students, parents, and teachers alike. This project makes use of the Weather Underground, DERP, AND DERP APIs for historical weather forecasts. Using scikit-learn, our ML-model determined what weather conditions prompted school-closings. It uses Flask and MongoDB to take in real-time weather data for our county and then make an educated prediction.</p>
-					<p>This application boasts a 99% accuracy.</p>
-				</div>
-			</div>
-			<div class="row top30">
-				<div class="col-sm-4">
-					<img class="project-pic" src="static/images/taxdat.png"/>
-				</div>
-				<div class="col">
-					<h5 style="color:rgb(127,127,127);margin-bottom:10px;">TaxDat Sales Tax Calculator</h5>
-					<h6><strong>Java, Android Studio</strong></h6><br>
-					<p>TaxDat is a Android mobile application that allows users to easily determine the sales tax and sale price of items across the United States. I made this in high school with a couple of my friends. At the time, none of us had credit or debit cards, meaning we only used cash when we went out. Taking out the exact amount of money we needed to make payments was a hassle because we never knew what the final sale price of anything was. Thus, we built TaxDat. TaxDat is a lightweight application that uses Location Services or user input to gather location data. It does not require any internet connection. Our sales tax data is from an external source. An extension is to link this app with a database that updates sales tax percentages when change occurs.</p>
-				</div>
-			</div>
-			<div class="row top30">
-				<div class="col-sm-4">
-					<img class="project-pic" src="static/images/taxdat.png"/>
-				</div>
-				<div class="col">
-					<h5 style="color:rgb(127,127,127);margin-bottom:10px;">The Classy Project</h5>
-					<h6><strong>PHP, Pure HTML/CSS</strong></h6><br>
-					<p>Classy is an academic social media platform meant for student collaboration. We've all used Facebook and other social media to collaborate on academic work, but it is not a surprise that these websites are more of a distraction than anything else. Classy offers the same functionality as Facebook, but without the distractive elements (cough cough Candy Crush...). Our website heavily encourages student-to-student collaboration rather than student-to-teacher (i.e. Piazza). Classy is built with a forum, instant messenger (without the stickers, emojis, and GIFs), and admin panel for student moderators to ensure that all discussions follow university honor code.</p>
-				</div>
-			</div>
-			<div class="row top30">
-				<br>
 			</div>
 		</div>
-		<footer class="footer" style="background-color:black; bottom:0; height:75px">
-			
+		<footer>
+			<div class="row top15">
+				<div class="col"></div>
+				<div class="col-md-4" style="text-align: right; margin-right: 15px">&copy; 2017 Namita Dongre<br>Carnegie Mellon University</div>
+			</div>
 		</footer>
+		<a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" style="background-color: #fffd02; color:black;"><span class="fa fa-chevron-up"></span></a>
+
 		<script src="static/js/tether.min.js"></script>
 		<script src="static/js/jquery-3.2.1.min.js"></script>
-		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/script.js"></script>	
+		<script src="static/js/bootstrap.min.js"></script>	
 	</body>
 </html>
 
