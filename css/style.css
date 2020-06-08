@@ -1,0 +1,244 @@
+/* --- General --- */
+
+h1 {
+  font-size: 5em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+}
+
+.title {
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;  
+}
+
+
+.section {
+  min-height: 500px;
+  margin-top: 100px;
+}
+
+.section h2 {
+  margin-bottom: 50px;
+}
+
+
+/* --- Navbar --- */
+.my-nav {
+  display: none;
+}
+
+
+/* --- Main Content --- */
+
+#main.section {
+  min-height: 800px;
+  margin-top: 0;
+}
+
+#main img {
+  width: 100%;
+  margin-top: -100px;
+}
+
+/* --- About --- */
+
+ul#about-list {
+  padding: 10px;
+}
+
+ul#about-list li {
+  margin: 0;
+  padding: 10px 0 10px 40px;
+  list-style: none;
+  background-image: url("../img/chicken.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+/* --- Skills --- */
+/* Source: https://www.darkcode.info/2020/03/animated-skills-bars-using-html-css.html */
+
+
+.skills {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 20px;
+  background-color: #0fbcf9;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+/* --- Projects --- */
+
+.project-content {
+  margin-bottom: 50px;
+}
+
+.project-content img {
+  width: 90%;
+}
+
+/* --- Side Scroll --- */
+/* Source: https://github.com/AlexandreBulete/WS-ScroLi/ */
+
+#WS-ScroLi {
+  position: absolute;
+}
+
+#WS-ScroLi.fixed {
+  position: fixed;
+}
+
+#WS-ScroLi.asbolute {
+  position: absolute;
+}
+
+#WS-ScroLi [class^="item"] {
+  display: inline-block;
+  display: inline-<a href="https://www.jqueryscript.net/tags.php?/grid/">grid</a>;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+#WS-ScroLi [class^="item"] .line, #WS-ScroLi [class^="item"] .line-animation {
+  position: absolute;
+}
+
+#WS-ScroLi [class^="item"] .line-animation {
+  z-index: 999;
+}
+
+#WS-ScroLi [class^="item"].reading {
+  color: red;
+  border-color: red;
+}
+
+#WS-ScroLi [class^="item"].reading .line, #WS-ScroLi [class^="item"].reading .line-animation {
+  background: red;
+}
+
+#WS-ScroLi [class^="item"].current {
+  border-width: 3px;
+  color: green;
+  border-color: green;
+}
+
+/* --- Contact --- */
+#contact ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+#contact li {
+  list-style-type: none;
+  float: left;
+  margin: 0 20px;
+  font-size: 48pt;
+}
+
+#contact.section {
+  min-height: 300px;
+}
+
+/* --- Footer --- */
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: right;
+}
+
+
+/* --- Responsive Design --- */
+@media only screen and (max-width: 600px) {
+  .my-nav {
+    display: block;
+  }
+
+  #WS-ScroLi {
+    display: none;
+  }
+
+  #main img{
+    margin-top: 10px;
+  }
+
+  #main.section {
+    margin-top: 50px;
+  }
+
+  .project-content img {
+    margin-bottom: 20px;
+  }
+
+  .project-content {
+    text-align: center;
+  }
+
+  #contact li {
+    font-size: 36pt;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .container {
+    max-width: 80%;
+  }
+}
