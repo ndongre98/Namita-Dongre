@@ -132,7 +132,7 @@
                 $.each(options.sections, (i)=> {
                     $('#WS-ScroLi').append(`
                         <span class="item-${i+1}">
-                            <i class="icon ${options.sections[i][1]}"></i>
+                            <a href="${options.sections[i][0]}" class="icon ${options.sections[i][1]}"></a>
                             <span class="line"></span>
                             <span class="line-animation"></span>
                         </span>

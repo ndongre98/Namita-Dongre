@@ -146,11 +146,12 @@ ul#about-list li {
 
 #WS-ScroLi [class^="item"] {
   display: inline-block;
-  display: inline-<a href="https://www.jqueryscript.net/tags.php?/grid/">grid</a>;
   justify-content: center;
   align-content: center;
   position: relative;
+  text-decoration: none!important;
 }
+
 
 #WS-ScroLi [class^="item"] .line, #WS-ScroLi [class^="item"] .line-animation {
   position: absolute;
