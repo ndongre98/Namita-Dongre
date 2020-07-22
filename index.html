@@ -179,7 +179,9 @@
       </div>
       <div class="row project-content">
         <div class="col-sm-4 text-center align-self-center">
-          <img src="img/drinkyland.png" alt="DrinkyLand logo"/>
+          <a noopener noreferrer target="_blank" href="https://www.drinkyland.io/">
+            <img src="img/drinkyland.png" alt="DrinkyLand logo"/>
+          </a>
         </div>
         <div class="col">
           <h5 style="color:rgb(127,127,127);margin-bottom:10px;"> 
@@ -191,7 +193,26 @@
           <h6><strong>Motivation: </strong></h6>
           <p>The motivation behind can be boiled down to missing those fun college nights pre-Rona (COVID-19). The team that I built this with and I are huge fans of Cody & Kelsey. We saw their video and thought to ourselves -- what if we turn Drinkyland the physical board game into something that we can play together online.</p>
           <h6><strong>How it Works: </strong></h6>
-          <p>Visit this link, create a game room ID, share it with your friends, and let the fun begin! Once all the players are in the game, each player will roll the dice and move to the appropriate game square. Players must complete the challenges...or face the consequences!! >:)</p>
+          <p>Visit <a noopener noreferrer target="_blank" href="https://www.drinkyland.io/">this link</a>, create a game room ID, share it with your friends, and let the fun begin! Once all the players are in the game, each player will roll the dice and move to the appropriate game square. Players must complete the challenges...or face the consequences!! >:)</p>
+        </div>
+      </div>
+      <div class="row project-content">
+        <div class="col-sm-4 text-center align-self-center">
+          <a noopener noreferrer target="_blank" href="http://www.moolatime.com/">
+            <img src="img/moola.png" alt="Moola logo"/>
+          </a>
+        </div>
+        <div class="col">
+          <h5 style="color:rgb(127,127,127);margin-bottom:10px;"> 
+            moola
+          </h5>
+          <h6><em><strong>Python, Flask, MongoDB, IBM Watson, CSS</strong></em></h6><br>
+          <h6><strong>Objective: </strong></h6>
+          <p>Moola is a stock sentiment analysis tool. For each company that is queried, moola scrapes relevant articles from financial experts and then uses IBM Watson's NLP API to perform a sentiment reading on these articles.</p>
+          <h6><strong>Motivation: </strong></h6>
+          <p>moola was a hackathon project that I did with some of my closest friends in 2017. We built it with the goal of quantifying the sentiment associated with a company in order to provide people one more data point when deciding to invest in a stock. Many of the tools we used back then don't exist anymore, so I rebuilt the application to bring it back to life!</p>
+          <h6><strong>How it Works: </strong></h6>
+          <p>Visit <a noopener noreferrer target="_blank" href="http://www.moolatime.com/">this link</a>, create an account and query any stock from the NASDAQ 100. Stocks that have been queried prior are cached in a database. New queries are done by first web scraping from Motley Fool or calling the Contextual News Search API, then running IBM Watson's NLP model on the text. Moola will display the stock chart, emotional score and sentiment score for each queried company. So what are you waiting for? It's Moola Time hehe!</p>
         </div>
       </div>
       <div class="row project-content">
@@ -223,7 +244,7 @@
           <h6><strong>Motivation: </strong></h6>
           <p>The motivation behind this project was that my county's school board would often wait till 5 AM the next day before deeming whether schools should close or not, inconveniencing students, parents, and teachers alike.</p>
           <h6><strong>How it Works: </strong></h6>
-          <p>This project makes use of the Weather Underground, and Twitter APIs for historical weather forecasts. Using scikit-learn, our ML-model determined what weather conditions prompted school-closings. It uses Flask and MongoDB to take in real-time weather data for our county and then makes an educated prediction.</p>                    
+          <p>This application was primarily built using Flask and MongoDB. It calls the Weather Underground and Twitter APIs for both historical weather forecasts and real-time weather data. Then, using scikit-learn, it inputs the weather conditions as a set of features to predict the chance of school-closings. </p>                    
           <p>**This application boasts a 99% test accuracy.</p>
         </div>
       </div>
