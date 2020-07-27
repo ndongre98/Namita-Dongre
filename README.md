@@ -1,4 +1,4 @@
-## Made by Namita-Dongre
+## My Personal Website :D
 Access Me @ https://www.namitadongre.me
 
 ## Special Thanks to:
